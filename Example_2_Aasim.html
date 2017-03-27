@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang = "en">
+	<meta charset = "utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX2
+		</title>		
+
+		<script type="text/javascript">
+			function printSomething()
+			{
+				var userInput = prompt("Enter a number between 1-10");
+
+				if(userInput >= 1 && userInput <= 10)
+				{	for(var i = 0; i < userInput; i++)
+					{
+						document.write("<br> So apparently you can add and switch around HTML via this.</br>");
+						document.write("<br> The user entered: "+ i + "</br>")
+					}
+
+					
+				}
+				else
+				{
+					alert("Invalid input, " + userInput "Enter a number between 1 and 10!")
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1>
+			Second time playing around
+		</h1>
+		<p>
+			Using variables, if statements, and for loops through
+			JavaScript to Output a simple number picker. This is a
+			lot like C++ syntactically.
+		</p>
+		<script type="text/javascript">
+			window.onload = printSomething;
+		</script>
+	</body>
+</html>
