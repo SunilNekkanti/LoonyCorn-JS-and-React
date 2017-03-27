@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang = "en">
+	<meta charset = "utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX4
+		</title>		
+
+		<script>
+			function printSomething()
+			{
+				var userInput = prompt("Enter a number between 1-10");
+
+				if(userInput >= 1 && userInput <= 10)
+				{	for (var i = 0; i < userInput; i++)
+					{
+						document.write("<br>" + (i+1) + ") So apparently you can add and switch around HTML via this.</br>");
+						document.write("<br> I entered " + userInput + " which is what this iterators over</br> ")
+	
+					}
+
+					
+				}
+				else
+				{
+					console.log("Invalid input, " + userInput +"Enter a number between 1 and 10!");
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1>
+			Fourth time playing around
+		</h1>
+		<p>
+			This file prints to a console.log instead of directly to the user via alert().
+		</p>
+		<script>
+			window.onload = printSomething;
+		</script>
+	</body>
+</html>
