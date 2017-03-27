@@ -5,7 +5,7 @@ function printSomething()
 	if(userInput >= 1 && userInput <= 10)
 	{	for (var i = 0; i < userInput; i++)
 		{
-			document.write("<br>" + (i+1) + ") So apparently you can add and switch around HTML via this.</br>");
+			document.write("<br>" + (i+1) + ") This code is from a different file.</br>");
 			document.write("<br> I entered " + userInput + " which is what this iterators over</br> ")
 
 		}
