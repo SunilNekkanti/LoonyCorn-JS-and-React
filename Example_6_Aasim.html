@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<meta charset = "utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX5
+		</title>
+		<script>
+			window.onload = printX;
+			var x = 7;
+
+			function printX()
+			{
+				e = 2.71828; 
+				var x = 10;
+				var pi = 3.1415;
+				console.log("Inside printX: x = " + x);
+				console.log("Inside printX: pi = " + pi);
+				console.log("Inside printX: e = " + e);
+				printAnotherX();
+			}
+
+			function printAnotherX()
+			{
+				var x = 20;
+				console.log("Inside printAnotherX: x = " + x);
+				console.log("Inside printAnotherX: e = " + e);
+				console.log("Inside printAnotherX: pi = " + pi);
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1> 
+			Sixth time around with JavaScript
+		</h1>
+		<p>
+			<b>
+				If you don't explicitly declare a local variable, it becomes global!
+				Therefore using the 'var' keyword before the variable is extremely important.
+			</b>
+		</p>
+	</body>
+</html>
