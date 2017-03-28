@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<meta charset = "utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX8
+		</title>
+		<script>
+			window.onload = printX;
+			var x = 7;
+
+			function printX()
+			{
+
+				console.log("Inside printX: x = " + x);
+				x = x + 8
+				printAnotherX();
+			}
+
+			function printAnotherX()
+			{
+				
+				console.log("Inside printAnotherX: x = " + x);
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1> 
+
+			Eighth time around with JavaScript
+		</h1>
+		<p>
+			If you reload the page, the variables reset to their original values.
+
+		</p>
+	</body>
+</html>
