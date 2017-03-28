@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<meta charset = "utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX5
+		</title>
+		<script>
+			window.onload = printX;
+			var x = 7;
+
+			function printX()
+			{
+				e = 2.71828; 
+				var x = 10;
+
+				pi = 3.1415;
+
+
+				console.log("Inside printX: x = " + x);
+				console.log("Inside printX: pi = " + pi);
+				console.log("Inside printX: e = " + e);
+				printAnotherX();
+			}
+
+			function printAnotherX()
+			{
+				
+				console.log("Inside printAnotherX: x = " + x);
+				console.log("Inside printAnotherX: e = " + e);
+				console.log("Inside printAnotherX: pi = " + pi);
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1> 
+			Sixth time around with JavaScript
+		</h1>
+		<p>
+			Local variables hide the presence of global variables.
+			<br>
+			If you don't <b> explicitly declare </b> a <u>local variable</u>, it becomes a <u> global variable </u>!
+			<br>
+			Therefore <b> using the </b> <i> 'var' </i>  <b> keyword </b> before the variable is extremely important.
+			
+			
+
+			<b>
+				If you don't explicitly declare a local variable, it becomes global!
+				Therefore using the 'var' keyword before the variable is extremely important.
+			</b>
+
+		</p>
+	</body>
+</html>
