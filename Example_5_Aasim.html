@@ -1,0 +1,42 @@
+</!DOCTYPE html>
+<html lang = "en">
+	<meta charset="utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX5
+		</title>
+		<script>
+			window.onload = printX;
+			var y = 5;
+			var x = 7;
+			function printX()
+			{
+				var x = 10;
+				var pi = 3.1415;
+				console.log("Inside printX: x = " + x);
+				console.log("Inside printX: pi = " + pi);
+				printAnotherX();
+			}
+
+			function printAnotherX()
+			{
+				var x = 20;
+				console.log("Inside printAnotherX: x = " + x);
+				console.log("Inside printAnotherX: y = " + y);
+				console.log("Inside printAnotherX: pi = " + pi);
+
+			}
+		</script>
+	</head>
+	<body>
+		<h1>
+			Fifth time with JavaScript
+		</h1>
+
+		<p>
+			<b> Local </b> variables take <i> precedence </i> over <b> Global </b> variables in the function's scope.
+
+		</p>
+
+	</body>
+</html>
