@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX9
+		</title>
+		<script>
+			function useArrays()
+			{
+				var daysoftheweek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+				printArray(daysoftheweek, "All the days");
+			}
+
+			function printArray(array, name)
+			{
+				console.log("printing array: " + name);
+				console.log(array.length + " elements long");
+				for( var i = 0; i < array.length; i++)
+				{
+					console.log(i + " : " + array[i]);
+				}
+			}
+		window.onload = useArrays();
+		</script>
+	</head>
+	<body style = "font-family: Arial">
+		<h1>
+			Ninth time with JavaScript
+		</h1>
+		<p>
+			JavaScript enables you to use arrays much like you do in C++.
+			<br>
+			It is rather intuitive and iterating over the array uses just an <i> array.length </i> function.
+			<br>
+			Indexes are from zero as well.
+		</p>
+
+
+	</body>
+</html>
