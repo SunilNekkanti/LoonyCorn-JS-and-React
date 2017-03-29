@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX10
+		</title>
+		<script>
+			function useArrays()
+			{
+				var daysoftheweek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+				var deepCopy = daysoftheweek.slice();
+				var shallowCopy = daysoftheweek;
+
+				printArray(daysoftheweek, "All the days");
+				printArray(deepCopy, "All the days as a Deep Copy");
+				printArray(shallowCopy, "All the days as a shallow Copy");
+
+				console.log("Now printing a modified version and seeing how that affects copies");
+				daysoftheweek[3] = 'Thursday'
+
+				printArray(daysoftheweek, "All the days");
+				printArray(deepCopy, "All the days as a Deep Copy");
+				printArray(shallowCopy, "All the days as a shallow Copy");
+
+			}
+
+			function printArray(array, name)
+			{
+				console.log("printing array: " + name);
+				console.log(array.length + " elements long");
+				for( var i = 0; i < array.length; i++)
+				{
+					console.log(i + " : " + array[i]);
+				}
+			}
+		window.onload = useArrays();
+		</script>
+	</head>
+	<body style = "font-family: Verdana">
+		<h1>
+			Tenth time with JavaScript
+		</h1>
+		<p>
+			Copying an Array works in two ways, you can do deep copies or shallow copies.
+			<br>
+			Use the <i> var arrayDeepCopy = array.slice(); </i> function to make sure that there is a deep copy.
+			<br>
+			Simple use the <i> '=' </i> operator as follows <i> var arrayShallowCopy = array; </i>
+			<br>
+			Changing one element in the original array, makes the shallow copy change too.
+			
+		</p>
+
+
+	</body>
+</html>
