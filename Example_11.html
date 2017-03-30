@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>
+			Experimenting with JavaScript EX10
+		</title>
+		<script>
+			function arrayManupilation()
+			{
+				var daysoftheweek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+				var weekends = []
+
+				printArray(weekends, "Weekend days");
+				{	
+					for(var i = 0; i < daysoftheweek.length; i++)
+					{
+						if(weekend(daysoftheweek[i]))
+						{
+							weekends.push(daysoftheweek[i]);
+						}
+					}
+				}
+				printArray(weekends, "Weekend days");
+			}
+
+			function weekend(day)
+			{
+				if( day == 'Saturday' || day == 'Sunday')
+				{
+					return true;
+				}
+				return false;
+			}
+
+
+			function printArray(array, name)
+			{
+				console.log("Printing: " + name);
+				console.log(" Length: " + array.length);
+				for(var i = 0; i < array.length; i++)
+				{
+					console.log(i + " : " + array[i]);
+				}
+			}
+
+			window.onload = arrayManupilation();
+		</script>
+	</head>
+	<body style = "font-family: Verdana">
+		<h1>
+			Eleventh time with JavaScript
+		</h1>
+		<p>
+			Elements can be added to an array using the <i> array.push(element) </i> method.
+			
+			
+		</p>
+
+
+	</body>
+</html>
