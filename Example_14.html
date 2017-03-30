@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Experimenting with JavaScript EX14
+		</title>
+
+		<script>
+			function arrayManip()
+			{
+				var allMonths = [1, 2, 'Mar', 4, 5, 'June', 7, 8, 'Sept', 10, 11, 'Dec']
+				console.log(allMonths[15]);
+				console.log(allMonths[-1]);
+				console.log(allMonths[-15]);
+			}
+
+			window.onload = arrayManip();
+		</script>
+	</head>
+	<body style = "font-family: Arial">
+		<h1>
+			Fourteenth time with JavaScript
+		</h1>
+		<p>
+			Elements that do not exist in an array when called (by index or otherwise) are 
+			<br>
+			<b> undefined </b>, which is a special value much like NULL.
+			<br>
+			You cannot use negative indexes to access elements but you can to splice them.
+ 		</p>
+
+	</body>
+</html>
