@@ -6,9 +6,23 @@
 		</title>
 
 		<script>
-			
 
-			window.onload = arrayManip();
+		var rectangle = 
+		{
+			length : 5.0,
+			breadth : 4.6,
+			color : 'Red'
+		};
+		
+		function objectStuff()
+		{
+			console.log("Our rectangel has length = " + rectangle.length);
+			console.log("Our rectangle has breadth = " + rectangle.breadth);
+			console.log("Our rectangle has color = " + rectangle.color);
+		}	
+
+
+		window.onload = objectStuff();			
 		</script>
 	</head>
 	<body style = "font-family: Arial">
